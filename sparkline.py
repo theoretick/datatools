@@ -4,13 +4,13 @@ def sparklines(inputitems):
     sparklines(list) -> string
     Returns a string of unicode chars to represent a sparkline graphic
     """
-
     import string
     
     numlist = [int(x) for x in inputitems]
     maximum = float(max(numlist))
     minimum = float(min(numlist))
     graph = []
+    unichars = "▁▂▃▄▅▆▇"
     
     for i, num in enumerate(numlist):
         if num/maximum == 1:
