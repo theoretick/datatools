@@ -1,3 +1,4 @@
+# coding: utf-8
 def sparklines(inputitems):
     """
     sparklines(list) -> string
@@ -6,14 +7,16 @@ def sparklines(inputitems):
 
     import string
     
-    numlist = inputitems[:]
+    numlist = [int(x) for x in inputitems]
     maximum = float(max(numlist))
     minimum = float(min(numlist))
     graph = []
     
     for i, num in enumerate(numlist):
         if num/maximum == 1:
-            graph.append(unichr(9608))
+            bar = unichr(9608)
+            bar.encode('utf-8','ignore')
+            graph.append(bar)
         elif num/maximum >= 0.87:
             graph.append(unichr(9607))
         elif num/maximum >= 0.75:
@@ -31,4 +34,4 @@ def sparklines(inputitems):
         else:
             graph.append(" ")
     
-    return "".join(graph)
+    return u"".join(graph)
