@@ -11,4 +11,4 @@ Generates sparklines from list parameter:
 
 ###Todo###
 
-Currently deciding on how to properly deal with scale, as can be seen from above.
+Currently deciding on how to properly deal with scale when comparing sparklines, as seen above.
