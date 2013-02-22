@@ -2,7 +2,7 @@ Some assorted python data tools I've been working on.
 
 ##Sparkline##
 
-Generates sparklines from list parameter:
+Simply Pyhton implrementation to generate sparklines from list parameter:
 
     >>> sparkline([1,1,2,2,3,3,4,4,2,2,3,4])
     ▂▂▃▃▆▆██▃▃▆█
@@ -11,4 +11,4 @@ Generates sparklines from list parameter:
 
 ###Todo###
 
-Currently deciding on how to properly deal with scale when comparing sparklines, as seen above.
+Currently deciding on how to properly deal with varied scale when comparing sparklines, as seen above.

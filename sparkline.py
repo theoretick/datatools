@@ -5,7 +5,6 @@ def sparkline(inputitems):
     sparkline(list) -> string
     Returns a string of unicode chars to represent a sparkline graphic
     """
-    import string
     
     numlist = [int(x) for x in inputitems]
     maximum = float(max(numlist))
