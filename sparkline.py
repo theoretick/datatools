@@ -4,8 +4,6 @@ def sparkline(inputitems):
     """
     sparkline(list) -> string
     Returns a string of unicode chars to represent a sparkline graphic
-
-    v2 - uses unicode chars from string instead of function calls
     """
     import string
     import sys
@@ -36,10 +34,7 @@ def sparkline(inputitems):
             graph.append(bars[pos-8])
         else:
             graph.append(" ")
-            print "appended blank"
 
     graphstr = "".join(graph)
 
-    print graphstr," is type: ",type(graphstr)
-    print "".join(graph)   
-    return graphstr.encode('utf-8')
+    print graphstr
