@@ -14,7 +14,9 @@ def sparkline(inputitems):
     bars = u"▁▂▃▄▅▆▇█"
     
     for i, num in enumerate(numlist):
-        if num/total == 1:
+        if minimum == 0:
+            graph.append(bars[0])
+        elif num/total == 1:
             graph.append(bars[7])
         elif num/total >= 0.87:
             graph.append(bars[6])
