@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 # -*- coding: UTF-8 -*-
 def sparkline(inputitems):
     """
@@ -11,26 +11,24 @@ def sparkline(inputitems):
     minimum = float(min(numlist))
     graph = []
     bars = u"▁▂▃▄▅▆▇█"
-    pos = len(bars)
     
     for i, num in enumerate(numlist):
         if num/maximum == 1:
-            graph.append(bars[pos-1])
+            graph.append(bars[7])
         elif num/maximum >= 0.87:
-            graph.append(bars[pos-2])
+            graph.append(bars[6])
         elif num/maximum >= 0.75:
-            graph.append(bars[pos-3])
+            graph.append(bars[5])
         elif num/maximum >= 0.62:
-            graph.append(bars[pos-4])
+            graph.append(bars[4])
         elif num/maximum >= 0.5:
-            graph.append(bars[pos-6])
+            graph.append(bars[3])
         elif num/maximum >= 0.25:
-            graph.append(bars[pos-7])
+            graph.append(bars[2])
         elif num/maximum >= 0.12:
-            graph.append(bars[pos-8])
+            graph.append(bars[1])
         else:
-            graph.append(" ")
+            graph.append(bars[0])
 
     graphstr = "".join(graph)
-
     print graphstr
