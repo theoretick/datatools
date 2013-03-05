@@ -10,6 +10,8 @@ def sparkline(inputitems):
     maximum = float(max(numlist))
     minimum = float(min(numlist))
     total = maximum-minimum
+    if total == 0:
+        total = 1
     graph = []
     bars = u"▁▂▃▄▅▆▇█"
     
