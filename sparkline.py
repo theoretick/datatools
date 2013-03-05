@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+
 def sparkline(inputitems):
     """
     sparkline(list) -> string
     Returns a string of unicode chars to represent a sparkline graphic
     """
+
+    # invalid input check
+    if not isinstance(inputitems, list):
+        print "TypeError: invalid input, must be list"
+        exit()
     
     numlist = [int(x) for x in inputitems]
     maximum = float(max(numlist))
