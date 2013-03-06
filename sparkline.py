@@ -42,3 +42,9 @@ def sparkline(inputitems):
 
     graphstr = "".join(graph)
     print graphstr
+
+if __name__=='__main__':
+    import sys
+    args = sys.argv[1].split(",")
+    sparkline(args)
+
