@@ -9,8 +9,7 @@ def sparkline(inputitems):
 
     # invalid input check
     if not isinstance(inputitems, list):
-        print "TypeError: invalid input, must be list"
-        exit()
+        raise TypeError,"invalid input, must be list"
     
     numlist = [float(x) for x in inputitems]
     maximum = max(numlist)
@@ -18,6 +17,7 @@ def sparkline(inputitems):
     total = maximum-minimum
     if total == 0:
         total = 1
+
     graph = []
     bars = u"▁▂▃▄▅▆▇█"
     
@@ -40,11 +40,9 @@ def sparkline(inputitems):
         else:
             graph.append(bars[0])
 
-    graphstr = "".join(graph)
-    print graphstr
+    print "".join(graph)
 
 if __name__=='__main__':
     import sys
     args = sys.argv[1].split(",")
     sparkline(args)
-
