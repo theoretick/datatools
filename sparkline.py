@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+# inspired by https://github.com/holman/spark
 
 def sparkline(inputitems):
     """
