@@ -12,9 +12,9 @@ def sparkline(inputitems):
         print "TypeError: invalid input, must be list"
         exit()
     
-    numlist = [int(x) for x in inputitems]
-    maximum = float(max(numlist))
-    minimum = float(min(numlist))
+    numlist = [float(x) for x in inputitems]
+    maximum = max(numlist)
+    minimum = min(numlist)
     total = maximum-minimum
     if total == 0:
         total = 1
