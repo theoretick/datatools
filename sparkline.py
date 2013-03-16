@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+#---------------------------------------
+# name: sparkline.py
+# author: lucas c
+# url: github.com/theoretick
+#
 # inspired by https://github.com/holman/spark
+#---------------------------------------
 
 def sparkline(inputitems):
     """
